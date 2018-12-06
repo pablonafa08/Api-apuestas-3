@@ -22,7 +22,6 @@
         "moment": "^2.22.2",
         "mongoose": "^5.3.10",
         "morgan": "^1.9.1",
-        "nodemon": "^1.18.6",
-        "openpay": "^1.0.3"
+        "nodemon": "^1.18.6"
     }
 }
