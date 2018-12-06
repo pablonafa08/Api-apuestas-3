@@ -7,7 +7,7 @@ var app = express();
 /**
  * OPENPAY CONFIG
  */
-var Openpay = require('openpay'); //class
+// var Openpay = require('openpay'); //class
 // var openpay = new Openpay('mmf1i1brwfk2phqyjsf7', 'sk_ced44512d96e45379242cc5641086dd4'); //intance (id de comerciante, clave privada)
 /**
  * MIDDLEARES
