@@ -2,6 +2,7 @@
 //modulo
 const moment = require('moment');
 const bcrypt = require('bcrypt-nodejs');
+const jwt = require('../services/jwt');
 
 //modelo
 const Usuario = require('../models/users');

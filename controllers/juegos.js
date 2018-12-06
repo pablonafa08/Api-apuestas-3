@@ -58,7 +58,7 @@ function getJuegos(req, res) {
             if (!allJuegos) {
                 res.status(200).send({ message: `No hay Juegos` });
             } else {
-                res.status(200).send({ juegos: allJuegos });
+                res.status(200).send({ allJuegos });
             }
         }
     });

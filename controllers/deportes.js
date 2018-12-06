@@ -63,7 +63,7 @@ function getDeportes(req, res) {
             if (!allDeportes) {
                 res.status(200).send({ message: `No hay Deportes` });
             } else {
-                res.status(200).send({ deportes: allDeportes });
+                res.status(200).send({ allDeportes });
             }
         }
     });
