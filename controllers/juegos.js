@@ -79,9 +79,25 @@ function getJuego(req, res) {
         }
     });
 }
+
+function getNoJuegos(req, res) {
+    Juego.find({ estatus: 'B' }).populate({ path: 'equipo1' }).populate({ path: 'equipo2' }).exec((err, allJuegos) => {
+        if (err) {
+            res.status(500).send({ message: `Error en la peticion` });
+        } else {
+            if (!allJuegos) {
+                res.status(200).send({ message: `No hay Juegos` });
+            } else {
+                res.status(200).send({ allJuegos });
+            }
+        }
+    });
+}
+
 module.exports = {
     addJuego,
     updateJuego,
     getJuegos,
-    getJuego
+    getJuego,
+    getNoJuegos
 }

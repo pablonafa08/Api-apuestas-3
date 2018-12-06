@@ -8,5 +8,6 @@ router.post('/add', juegoCtrl.addJuego);
 router.get('/all', juegoCtrl.getJuegos);
 router.put('/update/:id', juegoCtrl.updateJuego);
 router.get('/getone/:id', juegoCtrl.getJuego);
+router.get('/allNo', juegoCtrl.getNoJuegos);
 
 module.exports = router;
